@@ -1,0 +1,5 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker' 
+  args: ['build', '--tag=gcr.io/$PROJECT_ID/librespeed:$_TAG', '.']
+images: ['gcr.io/$PROJECT_ID/librespeed:$_TAG']
+timeout: '3600s'
